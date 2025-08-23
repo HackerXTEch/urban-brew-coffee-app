@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %} Acessories {% endblock title %}
+
+{% block body %}
+
+<style>
+    /* Star rating styles */
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .stars {
+        display: inline-flex;
+        color: #000;
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+
+    .review-count {
+        color: #654321;
+        font-size: 0.9rem;
+    }
+</style>
+
+<div class="container my-3 ">
+    <h2 class="my-5 text-center" style="font-family: monospace;">Accessories</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/accesss1.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"> <b>UrbanBrew New York Cold Brew Iced Filter Coffee
+                            Bottle 650ml</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">2 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 999.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access2.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b> Pour Over Gooseneck Kettle for Coffee,Tea with
+                            Thermometer Premium, Coffee
+                            Maker,Tea Update</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">1 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 1,999.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access3.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b>Manual Bean Crusher</b>
+                    </p><br>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">3 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 1,399.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access4.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b>French Press</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">1 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 1,499.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access5.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b>Moka Pot</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">2 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 1,099.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access6.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b>Coffee Tumbler White</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">4 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 600.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="/static/home/access7.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text" style="text-align: center;"><b>Coffee Tumbler Black</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">4 reviews</span>
+                    </div>
+                    <p style="text-align: center;">From Rs. 600.00</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn  btn-outline-secondary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

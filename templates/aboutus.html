@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %} About Us {% endblock title %}
+
+{% block body %}
+
+<style>
+    .hero-section {
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #333;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .centered-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        /* Adjust width as needed */
+        text-align: justify;
+        /* You can use center or justify based on style */
+        padding: 0 20px;
+        /* Extra padding for smaller screens */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .quote-container {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .quote-text {
+        font-style: italic;
+        font-size: 28px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .quote-underline {
+        width: 80px;
+        height: 6px;
+        background-color: orange;
+        transform: skewX(-20deg);
+        margin: 10px auto;
+    }
+</style>
+
+<div class="hero-section">
+    <img src="/static/home/about.jpg" class="hero-bg" alt="Engineering background">
+    <div class="hero-content">
+        <h4 class="display-5 fw-bold">ABOUT US</h4>
+    </div>
+</div>
+<br><br>
+<h1 style="text-align: center;"> Welcome To Urban Brew</h1>
+
+<div class="centered-paragraph my-3">
+    <p>
+        <b>
+            The history of the modest brew is nearly as long as the beverage itself, and it has a greater effect on our
+            society than we may think. Coffee has a long narrative to tell us, from the dawn of world trade to our
+            favorite neighborhood coffee shop, if we are just ready to listen. In reality, coffee has been a part of the
+            country's culture for decades, having a history dating back to 1670! Even though India has been a leading
+            producer for some years, coffee culture is still relatively young in India. The coffee culture in India is
+            still striving. It is constantly developing and evolving and thanks to the youth who prefer coffee over tea.
+            With a constant 5% growth in consumption each year, the caffeinated beverage is quietly but steadily
+            creating a reputation for itself in Indian society as a whole. There are over 16 different indigenous coffee
+            varieties in the nation! India is the only country in the world that grows all of its coffee in the shade.
+            The cash crop is typically cultivated at high altitudes in humid, wet conditions. Despite the prosperity of
+            the Indian coffee industry, people still prefer tea over coffee. As a result, more than 80% of India's
+            coffee is cultivated purely for commercial interests.
+        </b>
+    </p>
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="/static/home/about1.jpg" width="70%" height="70%">
+    </div>
+</div>
+
+<div class="quote-container">
+    <p class="quote-text">“<em>Pleasure in a thing of beauty is the essence of a happy life.</em>”</p>
+    <div class="quote-underline"></div>
+</div>
+
+<h3 style="text-align: center;"> What makes Urban Brew special:</h3>
+
+<pre style="text-align: justify;">
+        <i>
+            The Urban Brew brand is known for its extremely high-quality blends of 86 – 90pt coffees, often unheard of in the industry for blended coffee beans. 
+            Urban Brew also sources exquisite and seasonal single-origin and
+            award-winning coffees from auctions like the Cup of Excellence and Gems of Araku.
+
+            Urban Brew is also known for its educational written material on espresso and brewing. Some of their top
+            articles include:
+
+            <u>1. Espresso puck preparation</u>
+            <u>2. Coffee brew guides</u>
+            <u>3. Coffee flavor profiles</u>
+            <u>4. Coffee roast levels</u>
+
+            Urban Brew also describes their coffees uniquely through their flavor profile attributes of Classic,
+            Balanced, Adventurous, and Modern, and through their unique color-grading system seen here, which helps the
+            customer better home on what coffee may work best for their taste and brewing preferences.
+        </i>
+</pre>
+<div class="centered-paragraph my-3">
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="/static/home/about2.jpg" width="80%" height="80%">
+    </div>
+</div>
+{% endblock body %}

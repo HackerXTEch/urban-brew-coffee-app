@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %} Instant Coffee {% endblock title %}
+
+{% block body %}
+
+<style>
+    .hero-section {
+        position: relative;
+        overflow: hidden;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #333;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Star rating styles */
+    .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .stars {
+        display: inline-flex;
+        color: #000;
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+
+    .review-count {
+        color: #654321;
+        font-size: 0.9rem;
+    }
+</style>
+<div class="hero-section">
+    <img src="/static/home/instant.jpg" class="hero-bg" alt="Engineering background">
+    <div class="hero-content">
+        <h2 class="fw-normal text-muted mb-3"><i>Instant Brewed, Endlessly Enjoyed</i></h2>
+        <h3 class="fw-normal text-muted mb-3"><i>Discover</i></h2>
+            <h4 class="display-5 fw-bold">INSTANT COFFEE MAGIC</h4>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag1.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"> <b>Caramel Macchiato</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">4 reviews</span>
+                    </div>
+                    <p>From Rs. 299.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag3.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Coffee Bean Sachet</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">2 reviews</span>
+                    </div>
+                    <p>From Rs. 599.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag2.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Fine Coffee Sipper</b></p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">10 reviews</span>
+                    </div>
+                    <p>From Rs. 199.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag4.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Cappuccino Refreshing Can</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">15 reviews</span>
+                    </div>
+                    <p>From Rs. 399.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag6.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Mocha Can With Jar</b></p><br>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">10 reviews</span>
+                    </div>
+                    <p>From Rs. 699.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag16.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Gold Blend – Premium Freeze-Dried Instant Coffee </b>
+                        .</p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">3 reviews</span>
+                    </div>
+                    <p>From Rs. 499.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag15.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Coffee Espresso Blend – Bold & Rich Instant Coffee </b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">5 reviews</span>
+                    </div>
+                    <p>From Rs. 399.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag12.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Irish Hazelnut & Dark Chocolate (Combo pack of 2) </b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">10 reviews</span>
+                    </div>
+                    <p>From Rs. 799.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag10.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Classic Agglomerated Instant Coffee</b>
+                    </p>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">2 reviews</span>
+                    </div>
+                    <p>From Rs. 399.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag13.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Cold Brew Bags</b>
+                    </p><br>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">5 reviews</span>
+                    </div>
+                    <p>From Rs. 599.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag18.png" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Crema Intense Instant coffee</b>
+                    </p><br>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">3 reviews</span>
+                    </div>
+                    <p>From Rs. 899.00.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="\static\home\bag14.jpg" class="d-block w-100">
+                <div class="card-body">
+                    <p class="card-text"><b>Cafe Style Coffee Combo </b>
+                    </p><br>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">1 reviews</span>
+                    </div>
+                    <p>From Rs. 699.00</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary me-2">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+{% endblock body %}
