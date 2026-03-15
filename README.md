@@ -7,7 +7,6 @@ Welcome to Urban Brew - your digital gateway to the perfect coffee experience. W
 
 ## **Table of Contents**
 * [About Urban Brew](#about-urban-brew)
-* [Our Creator](#our-creator)
 * [What Makes Us Special](#what-makes-us-special)
 * [Features](#features)
 * [Getting Started](#getting-started)
@@ -15,16 +14,6 @@ Welcome to Urban Brew - your digital gateway to the perfect coffee experience. W
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Terms & Love](#terms--love)
-
----
-
-## **Our Creator**
-**Name:** Shubhangi Raj  
-**Age:** 21 
-
-I'm a passionate developer who believes that great coffee and great code share something in common - they both require patience, precision, and a lot of love. Urban Brew was born from late-night coding sessions fueled by exceptional coffee and a dream to bring that same warmth to your screen.
-
-*"Code is poetry, coffee is life, and Urban Brew is where they meet."*
 
 ---
 
